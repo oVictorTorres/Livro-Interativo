@@ -7,9 +7,19 @@ public class App {
         System.out.println("\n Entrar na casa(Entrar), Recusar e ficar do lado de fora(Recusar) ou Ir para o celeiro escondido(Celeiro).");
 
         String resp1 = input.nextLine();
+        
+
 
         if (resp1.toUpperCase().equals("ENTRAR")) {
             System.out.println("Você adentra a casa.");
+            System.out.println("Você irá dormir na cadeira(Cadeira) ou no quarto de hóspedes?(Quarto)");
+            String resp2 = input.nextLine();
+            if (resp2.toUpperCase().equals("CADEIRA")) {
+                System.out.println("Você dormiu na cadeira e conseguiu evitar seu assassinato.");
+            }
+            else {
+                System.out.println("Você dormiu no quarto de hóspedes e acabou sendo esfaqueado pelo velhinho que era um canibal.");
+            }
         }
         else if (resp1.toUpperCase().equals("RECUSAR")) {
             System.out.println("Você recusa e fica na frente da casa.");
